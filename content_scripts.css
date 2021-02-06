@@ -1,0 +1,10 @@
+.commit-pr-list {
+    margin-bottom: 8px;
+    border-top: 1px solid var(--color-border-primary,var(--color-fade-black-15));
+    color: var(--color-auto-gray-7);
+}
+
+.commit-pr {
+    color: var(--color-text-tertiary);
+    margin-top: 8px;
+}
