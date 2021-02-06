@@ -1,0 +1,15 @@
+{
+  "name": "Github Display PR List",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "Github Display PR List"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/commit/*"],
+      "css": ["content_scripts.css"],
+      "js": ["content_scripts.js"]
+    }
+  ]
+}
