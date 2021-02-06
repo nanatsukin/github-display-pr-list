@@ -19,7 +19,7 @@ xhr.onload = function (e) {
                     matchCnt++;
                     document
                         .getElementsByClassName('commit-pr-list')[0]
-                        .insertAdjacentHTML('beforeend', '<div class="commit-pr">' + prIcon + aObj[i].outerHTML + '</div>');
+                        .insertAdjacentHTML('beforeend', '<div class="commit-pr">' + aObj[i].parentNode.previousElementSibling.firstElementChild.outerHTML + aObj[i].outerHTML + '</div>');
                 }
             }
             if (matchCnt === 0) {
@@ -40,6 +40,3 @@ xhr.onerror = function (e) {
         .insertAdjacentHTML('beforeend', '<div class="commit-pr">PRの取得に失敗しました</div>');
 };
 xhr.send(null);
-
-
-
