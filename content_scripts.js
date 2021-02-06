@@ -30,13 +30,13 @@ xhr.onload = function (e) {
         } else {
             document
                 .getElementsByClassName('commit-pr-list')[0]
-                .insertAdjacentHTML('beforeend', '<div class="commit-pr">PRの取得に失敗しました</div>');
+                .insertAdjacentHTML('beforeend', '<div class="commit-pr">Failed to get PR</div>');
         }
     }
 };
 xhr.onerror = function (e) {
     document
         .getElementsByClassName('commit-pr-list')[0]
-        .insertAdjacentHTML('beforeend', '<div class="commit-pr">PRの取得に失敗しました</div>');
+        .insertAdjacentHTML('beforeend', '<div class="commit-pr">Failed to get PR</div>');
 };
 xhr.send(null);
