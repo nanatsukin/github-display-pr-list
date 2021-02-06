@@ -2,9 +2,11 @@
   "name": "Github Display PR List",
   "manifest_version": 2,
   "version": "1.0",
+  "description": "GitHubのコミットページにPRの一覧を表示させます。",
   "browser_action": {
     "default_title": "Github Display PR List"
   },
+  "permissions": ["https://github.com/"],
   "content_scripts": [
     {
       "matches": ["https://github.com/*/*/commit/*"],
